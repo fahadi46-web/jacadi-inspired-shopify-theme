@@ -1,0 +1,7 @@
+<div>
+  <a href="{{ product.url }}">
+    <img src="{{ product.featured_image | img_url: '600x' }}" loading="lazy">
+    <h3>{{ product.title }}</h3>
+    <span>{{ product.price | money }}</span>
+  </a>
+</div>

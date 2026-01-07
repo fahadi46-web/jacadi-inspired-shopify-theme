@@ -1,0 +1,10 @@
+{
+  "sections": {
+    "hero": { "type": "editorial-hero" },
+    "products": {
+      "type": "product-grid",
+      "settings": { "collection": "frontpage" }
+    }
+  },
+  "order": ["hero","products"]
+}

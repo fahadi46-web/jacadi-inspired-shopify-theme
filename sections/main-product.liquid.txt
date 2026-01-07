@@ -1,0 +1,21 @@
+<section class="product-page">
+  <div class="product-grid">
+    <div class="product-gallery">
+      {% for image in product.images %}
+        <img src="{{ image | img_url: '1200x' }}" loading="lazy">
+      {% endfor %}
+    </div>
+
+    <div class="product-info">
+      <h1>{{ product.title }}</h1>
+      <p class="price">{{ product.price | money }}</p>
+
+      <form method="post" action="/cart/add">
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        <button class="add-to-cart">Add to Bag</button>
+      </form>
+
+      {{ product.description }}
+    </div>
+  </div>
+</section>

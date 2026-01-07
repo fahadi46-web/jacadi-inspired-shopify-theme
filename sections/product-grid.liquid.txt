@@ -1,0 +1,7 @@
+<section>
+  <div class="product-grid">
+    {% for product in collections[section.settings.collection].products %}
+      {% render 'product-card', product: product %}
+    {% endfor %}
+  </div>
+</section>

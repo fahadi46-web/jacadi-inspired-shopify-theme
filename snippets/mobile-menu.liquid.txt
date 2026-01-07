@@ -1,0 +1,10 @@
+<div class="mobile-menu">
+  {% for link in linklists.main-menu.links %}
+    <details>
+      <summary>{{ link.title }}</summary>
+      {% for child in link.links %}
+        <a href="{{ child.url }}">{{ child.title }}</a>
+      {% endfor %}
+    </details>
+  {% endfor %}
+</div>

@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Theme Settings",
+    "settings": [
+      { "type": "image_picker", "id": "image", "label": "Hero Image" },
+      { "type": "text", "id": "heading", "label": "Hero Heading" },
+      { "type": "text", "id": "text", "label": "Hero Text" },
+      { "type": "url", "id": "link", "label": "Hero Link" }
+    ]
+  }
+]

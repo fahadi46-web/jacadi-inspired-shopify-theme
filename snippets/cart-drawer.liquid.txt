@@ -1,0 +1,7 @@
+<div class="cart-drawer">
+  <button class="cart-close">✕</button>
+  {% for item in cart.items %}
+    <p>{{ item.product.title }} – {{ item.line_price | money }}</p>
+  {% endfor %}
+  <a href="/checkout">Checkout</a>
+</div>

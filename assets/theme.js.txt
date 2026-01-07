@@ -1,0 +1,11 @@
+document.querySelector('.cart-toggle')?.addEventListener('click', () => {
+  document.body.classList.toggle('cart-open')
+})
+
+document.querySelector('.cart-close')?.addEventListener('click', () => {
+  document.body.classList.remove('cart-open')
+})
+
+document.querySelector('.mobile-menu-toggle')?.addEventListener('click', () => {
+  document.body.classList.toggle('menu-open')
+})

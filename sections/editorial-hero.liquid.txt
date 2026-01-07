@@ -1,0 +1,8 @@
+<section class="editorial-hero">
+  <img src="{{ section.settings.image | img_url: '2000x' }}" loading="eager">
+  <div>
+    <h1>{{ section.settings.heading }}</h1>
+    <p>{{ section.settings.text }}</p>
+    <a href="{{ section.settings.link }}">Shop Now</a>
+  </div>
+</section>
